@@ -1,4 +1,4 @@
-package QR;
+package ACMQR;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -106,7 +106,7 @@ public class ACMQR extends JFrame implements Runnable, ThreadFactory {
                         JOptionPane.showMessageDialog(null, "Error: \""+result.getText()+"\" not in database.");
                         ex.printStackTrace();
                     }
-                    //JOptionPane.showMessageDialog(null, result.getText());
+                   
                 }
             }
         } while (true);
@@ -116,7 +116,7 @@ public class ACMQR extends JFrame implements Runnable, ThreadFactory {
         try {
 			label.setText("Name: "+DB.getName(uid));
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
     }
